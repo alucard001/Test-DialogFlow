@@ -8,7 +8,7 @@ from flask import make_response
 
 app = Flask(__name__)
 
-@app.route('webhook', methods=["POST"])
+@app.route('/webhook', methods=["POST"])
 
 # This function is called by Google Dialogflow
 def webhook():
